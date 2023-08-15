@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import TableColoriser from './Components/TableColoriser';
+import GuessNumber from './Components/GuessNumber';
 
 function App() {
   return (
     <>
         <div className = "mainapp-container" style = {{textAlign:'center',fontSize:'25px'}} >
-          <TableColoriser />
+          <GuessNumber />
         </div>
     </>
   )
