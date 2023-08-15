@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import DarkMode from './Components/DarkMode'
+import { useState } from 'react';
+import TableColoriser from './Components/TableColoriser';
 
 function App() {
   return (
     <>
         <div className = "mainapp-container" style = {{textAlign:'center',fontSize:'25px'}} >
-            <DarkMode />
+          <TableColoriser />
         </div>
     </>
   )
