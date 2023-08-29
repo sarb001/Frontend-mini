@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 
 const Toastmsg = ({message , onclose}) => {
-
+        // for how long msg  will be displayed
      const [isvisible,setisvisible] = useState(true);
      const duration = 3000;
 
@@ -16,6 +16,7 @@ const Toastmsg = ({message , onclose}) => {
         }, duration);
         return () => clearTimeout(timer);
      },[duration , onclose])
+
 
     return (
         <>

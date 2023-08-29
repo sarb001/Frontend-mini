@@ -3,6 +3,7 @@ import Toastmsg from './Toastmsg';
 
 const Toast = () => {
 
+        // To show and pass data to other component 
     const [showtoast,setshowtoast] = useState(false);
 
     const  showtoastmsg = () => {
@@ -12,8 +13,6 @@ const Toast = () => {
     const  closetoast = () => {
           setshowtoast(false);
     }
-
-
 
   return (
     <>
