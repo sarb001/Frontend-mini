@@ -1,8 +1,26 @@
-.lightmode{
-  background-color: rgb(226, 0, 0);
-  color: rgb(0, 0, 0);
+.accordianheader{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.darkmode{
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 227, 227);
+.accordian-container{
+  padding: 2% 10%;
+  margin: 4%;
+}
+.accordianitem{
+  border: 2px solid red;
+}
+.symbol{
+   background-color: greenyellow;
+   border-radius: 10%;
+   width: 5%;
+}
+.accordian-detail{
+  width: 100%;
+}
+
+.hidedata{
+   display: none;
+}
+.showdata{
+  display: block;
 }
