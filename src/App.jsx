@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import '../src/styles/App.css';
-import Toast from './Components/Toast';
+import ProgressBar from './Components/ProgressBar';
 
 function App() {
 
   return (
     <>
         <div className = "mainapp-container" style = {{textAlign:'center',fontSize:'25px'}} >
-            <h3>  Toast Popup </h3> 
-            <Toast />
+            <h3>  Progress Bar  </h3> 
+            <ProgressBar />
         </div>
     </>
   )
