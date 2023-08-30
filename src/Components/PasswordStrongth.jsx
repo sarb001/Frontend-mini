@@ -5,7 +5,9 @@ const PasswordStrongth = () => {
 
      const [password,setpassword] = useState('');
      const [strength,setStrength] = useState(0);
-     
+     const [color,setcolor] = useState('wheat');
+
+
      const calculateStrength = (value) => {
          
         const lowercase = /[a-z]/;
@@ -22,25 +24,32 @@ const PasswordStrongth = () => {
                 (hasuppercase ? 1 : 0) + 
                 (hasNumber ? 1 : 0) + (hasSymbols ? 1 : 0);
 
-                if(Strengthvalue <= 4){
-                    progress.style.backgroundColor = 'green';
-                }else if(Strengthvalue <= 3){
-                    progress.style.backgroundColor = 'orange';
-                }else {
-                    progress.style.backgroundColor = 'red';
-                }
-
                 return (Strengthvalue / 4) * 100;
-            }
+    } 
 
+     const changecolor = (strength) => {
+          if(strength < 25){
+              return 'red';
+          }else if(strength < 50){
+             return 'orange';
+          }else if(strength < 75){
+             return 'yellow' ;
+          }else {
+            return 'green';
+          }     
+        }
 
      const handlechange = (e) => {
         const newPassword = e.target.value;
         setpassword(newPassword);
 
+        // find Strength 
         const newStrength = calculateStrength(newPassword);
         setStrength(newStrength);
 
+        // change  color 
+        const newcolor = changecolor(newStrength);
+        setcolor(newcolor);
      }
 
   return (
@@ -56,7 +65,7 @@ const PasswordStrongth = () => {
 
          <div className='progressbar-container'>
                 <div className='progress' 
-                style = {{ backgroundColor:'orange', width: `${strength}%` }} > 
+                style = {{ backgroundColor: color , width: `${strength}%` }} > 
                 {strength}%
                  </div>
          </div>
