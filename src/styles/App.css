@@ -1,21 +1,9 @@
 
-#start-btn{
-  padding: 2% 5%;
-}
-#pause-btn{
-  padding: 2% 5%;
-}
-#reset-btn{
-  padding: 2% 5%;
-}
-.buttons{
-  margin: 1%;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
-#bar{
- padding: 4% 6%;
-}
 .progress{
-  background-color: red;
+  width: 100%;
+  height: 5vh;
+  border-radius: 50px;
+}
+.progressbar-container{
+  margin: 3%;
 }

@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import '../src/styles/App.css';
-import ProgressBar from './Components/ProgressBar';
+import PasswordStrongth from './Components/PasswordStrongth';
+
 
 function App() {
-
   return (
     <>
-        <div className = "mainapp-container" style = {{textAlign:'center',fontSize:'25px'}} >
-            <h3>  Progress Bar  </h3> 
-            <ProgressBar />
+        <div className = "mainapp-container" 
+        style = {{textAlign:'center',fontSize:'23px'}} >
+            <h3>  Password Strength  </h3> 
+            <PasswordStrongth />
         </div>
     </>
   )
